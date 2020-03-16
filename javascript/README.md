@@ -69,7 +69,12 @@ element: setAttribute appendChild removeChild
 
 ### 异步
 callback(ajax, eventListen, settime)
+
 promise(fetch)
+new Promise((resolve, reject) => {resolve();reject()})
+promise.then(res => {}).catch(err => {})
+promise.all([pro1,pro2]).then()
+
 async function method(){ await ()=>{} }
 
 ### 面向对象（核心是类）
@@ -95,6 +100,11 @@ sessionStorage localStorage
 setItem() getItem() removeItem() clear()
 ibd
 
+### json
+
+stringify() 转字符串
+parse() 转json
+
 ## es6
 
 let const
@@ -106,13 +116,15 @@ x => {} 只有一个参数
 扩展运算（...params）[...arr]{...obj}
 解构赋值 [a, b] = [value1, value2]
 链式写法
-class name{
- constructor(params) {
-  this.variable: params;
+类class Name extends SuperName{
+ constructor(params1, params2) {
+  super(params1)继承
+  this.variable = params2;
  }
  
  function() {}
 }
+json简写 {a:a} {a} {a: function(){}} {a(){}}
 
 数据类型
 set（去重） map
