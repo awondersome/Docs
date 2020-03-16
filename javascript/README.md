@@ -102,11 +102,13 @@ let const
 x => {} 只有一个参数
 () => x 只有一个返回值
 默认参数（a=1）=> {}
-数据类型
-set（去重） map
-链式写法
+`${}` 字符串模板
 扩展运算（...params）[...arr]{...obj}
 解构赋值 [a, b] = [value1, value2]
+链式写法
+
+数据类型
+set（去重） map
 
 forEach((item)=>{})取代for，因为for通常使用在数组和对象上，所以ES6直接把它封装成数组和对象的一个方法
 
@@ -116,9 +118,9 @@ map((item)=>{改变每个item的操作})返回新的数组
 
 reduce((累加值，item)=>{累加值+item})返回累加值
 
-startSwitch()以什么字符串开头
+startsWith()以什么字符串开头
 
-endSwitch()以什么字符串结尾
+endsWith()以什么字符串结尾
 
 
 ## typescript
