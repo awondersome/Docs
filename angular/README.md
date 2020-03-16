@@ -128,12 +128,29 @@ websocket 传输协议
 
 * {{}} 数据渲染
 `<div>{{ variable }}</div>`
+`{{ null?.key }}空对象防止报错`
 
 * [] 属性绑定 
 `<input [value]="variable" [display]="boolean">`
+`[ngClass] = "{'active': boolen}"`
+`[class.active] = "boolen"`
+`[ngStyle] = "{'color': boolen ? 'red' : 'blue'}"`
+`[style.color] = "boolen ? 'red' : 'blue'"`
+
+* () 事件绑定
+`(click)="function()"`
 
 * [()] 双向绑定
 `[(ngModel)]="variable"`
+
+
+### 指令
+
+#### *ngFor
+`*ngfor="let item of list"` 在组件里可以使用item变量
+
+#### *ngIf
+`*ngIf="boolean"` 创建/删除DOM节点
 
 
 ### 表单
@@ -162,27 +179,12 @@ websocket 传输协议
 
 > 用于格式化数据
 
-* | uppercase 转换为大写字母 
+* | uppercase 转换为大写字母
 
-### 循环指令
+* | async 异步数据
 
-*ngFor
-`*ngfor="let item of list"` 在组件里可以使用item变量
+* | currency 转化货币
 
-### 条件指令
-
-*ngIf
-`*ngIf="boolean"` 创建/删除DOM节点
-
-### 事件
-
-* （click）点击事件
-
-### 方法
-
-onSelect(){}
-onSelect = fn() {}
-onSelect(e:type):type{}
 
 ### 装饰器
 
@@ -207,30 +209,13 @@ onSelect(e:type):type{}
 
 @Injectable 依赖注入类装饰器
 
-###
-
-* [class.selected]="true"，true添加，false移除
-
-
-
 
 ### 订阅
 
 Observable和subscribe
 
 
-### 绑定类
-
-// ngClass和ngStyle绑定的是对象，ngClass和class只需判断true or false
-
-[ngClass] = "{'active': boolen}"
-
-[class.active] = "boolen"
-
-[ngStyle] = "{'color': boolen ? 'red' : 'blue'}"
-
-[style.color] = "boolen ? 'red' : 'blue'"
-
+### DomSanitizer 净化器
 
 ### ngfor添加事件
 
@@ -239,15 +224,6 @@ isActive = fn(item)
 
 // 点击切换效果
 if(isActive === item){ isActive = ''} else{ isActive = item}
-
-### DomSanitizer 净化器
-
-### 绑定空对象
-
-item.data => item?.data 通过添加?，如果对象为空则不绑定
-
-数据渲染只需要申明一个data变量来接收res.data，绑定时加?来防止空对象报错
-
 
 ### ngfor递归
 
