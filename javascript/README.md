@@ -106,6 +106,13 @@ x => {} 只有一个参数
 扩展运算（...params）[...arr]{...obj}
 解构赋值 [a, b] = [value1, value2]
 链式写法
+class name{
+ constructor(params) {
+  this.variable: params;
+ }
+ 
+ function() {}
+}
 
 数据类型
 set（去重） map
