@@ -219,11 +219,6 @@ checkoutForm = this.formBuilder.group({key: value})
 @Injectable 依赖注入类装饰器
 
 
-### 订阅
-
-Observable和subscribe
-
-
 ### DomSanitizer 净化器
 
 ### ngfor添加事件
