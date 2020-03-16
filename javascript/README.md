@@ -2,48 +2,48 @@
 
 脚本语言，编程语言，解释性语言，是动态行为
 
-## 变量
+### 变量
 var variable = value
 类型：number string boolean array object
 
-## 函数
+### 函数
 function method() {}
 调用
 参数
 作用域
 返回值return
 
-## 运算符 
+### 运算符 
 运算: + - * / % ** ++ -- = += -= *= /=
 比较：== === != !=== > < >= <=
 赋值：= 
 逻辑： && // !
 三元： () ? return1 : return2
 
-## 操作符 
+### 操作符 
 typeof
 
-## 转义符 
+### 转义符 
 /
 
-## 条件语句
+### 条件语句
 if(value) {} else if(value) {} else {}
 
 switch(variable) {case value1: break; case value2: break; default: }
 
-## 循环语句（条件+重复）
+### 循环语句（条件+重复）
 for(let variable = 0, variable < number, variable++) { break/continue }
 while() {} 和for用法相同
 do{} while() 先执行一次再判断条件
 
-## 对象（一个属性和变量的集合，通常由变量和函数组成）
+### 对象（一个属性和变量的集合，通常由变量和函数组成）
 {}
 ./[]
 this（向上寻找指向的对象）
 
 browser => window document navigator
 
-## 属性（对象变量）
+### 属性（对象变量）
 dom
 element: textContent
 字符串：length []
@@ -53,7 +53,7 @@ nall
 NaN
 
 
-## 方法（对象函数）
+### 方法（对象函数）
 dom: querySelector createElement
 element: setAttribute appendChild removeChild
 事件：onclick onblur onfocus onkeypress onkeydown onkeyup onmousehove onmouseout addEventListener(新事件监听，取缔旧的方法) removeEventListener(新事件监听，取缔旧的方法) eventDefault（阻止默认行为） stopPropagation(阻止冒泡)
@@ -63,16 +63,16 @@ element: setAttribute appendChild removeChild
 数组： push pop unshift shift
 
 
-## 调试 
+### 调试 
 语法错误
 逻辑错误
 
-## 异步
+### 异步
 callback(ajax, eventListen, settime)
 promise(fetch)
 async function method(){ await ()=>{} }
 
-## 面向对象（核心是类）
+### 面向对象（核心是类）
 将相同特征（即有相同属性和方法）的东西封装成一个集合，就是类
 构造函数(construct 创建类)
 function obj() {var obj = {}, obj.prop = value, obj.method = function}
@@ -83,17 +83,42 @@ new obj()
 继承：原型才会被继承，原型外的不会被继承
 call：回掉函数，可以改变this的指向
 
-## XMLHttpRequest和fetch
+### XMLHttpRequest和fetch
 
 new XMLHttpRequest();
 fetch(url).then((res)=>{}).catch((err)=>{})
 
-## 浏览器数据库
+### 浏览器数据库
+cookie
+storage 
+sessionStorage localStorage
+setItem() getItem() removeItem() clear()
+ibd
 
 ## es6
 
 let const
 () => {}
-() => x
+x => {} 只有一个参数
+() => x 只有一个返回值
+默认参数（a=1）=> {}
+数据类型
+set（去重） map
+链式写法
+扩展运算（...params）[...arr]{...obj}
+解构赋值 [a, b] = [value1, value2]
+
+forEach((item)=>{})取代for，因为for通常使用在数组和对象上，所以ES6直接把它封装成数组和对象的一个方法
+
+filter((item)=>{return item == confition 判断每个item是否符合条件，如果返回的是true则保留})
+
+map((item)=>{改变每个item的操作})返回新的数组
+
+reduce((累加值，item)=>{累加值+item})返回累加值
+
+startSwitch()以什么字符串开头
+
+endSwitch()以什么字符串结尾
+
 
 ## typescript
