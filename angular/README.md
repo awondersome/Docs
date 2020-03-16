@@ -94,6 +94,7 @@ websocket 传输协议
 > 组件化是angular的核心，将HTML切分成多个组件，每个组件有独立的HTML/CSS/JS，用组件选择器构造index.html，组件基于angular框架，组件间内聚强
 > 组件=UI模板+交互数据
 > app.component是根组件，对应app-root，新生成的组件有独立的文件夹
+> @Component是一个类装饰器，声明在组件类前面
 > ng-zorro-antd 蚂蚁金服开发的一个angular组件  
 > ng-alain 这是一个基于ng-zorro开发的angular组件
 
@@ -125,7 +126,14 @@ websocket 传输协议
 
 > 双向绑定数据来源[(ngModel)]，需要引入ngModel，类似于数据暂存
 
-* {{}} 数据表达式
+* {{}} 数据渲染
+`<div>{{ variable }}</div>`
+
+* [] 属性绑定 
+`<input [value]="variable" [display]="boolean">`
+
+* [()] 双向绑定
+`[(ngModel)]="variable"`
 
 
 ### 表单
@@ -156,9 +164,15 @@ websocket 传输协议
 
 * | uppercase 转换为大写字母 
 
-### 循环
+### 循环指令
 
-`*ngFor`循环，用let of声明变量
+*ngFor
+`*ngfor="let item of list"` 在组件里可以使用item变量
+
+### 条件指令
+
+*ngIf
+`*ngIf="boolean"` 创建/删除DOM节点
 
 ### 事件
 
@@ -170,9 +184,26 @@ onSelect(){}
 onSelect = fn() {}
 onSelect(e:type):type{}
 
-### 
+### 装饰器
 
-`*ngIf`判断，true显示，false隐藏
+@Component()
+
+@Input() variable 属性装饰器，表明输入的property是由父传到子
+`
+<child [variable]="value"></child>
+`
+`@Input() variable
+<div>{{variable}}</div>
+`
+
+@Output() event 属性装饰器，表明输出的property是有子传到父
+`
+<child (event)="function"></child>
+`
+`
+@Output() event = new EventEmitter()
+<div (click)="envet.emit()">
+`
 
 ###
 
