@@ -22,6 +22,8 @@ function method() {}
 
 ### 操作符 
 typeof
+new
+this
 
 ### 转义符 
 /
@@ -42,6 +44,15 @@ do{} while() 先执行一次再判断条件
 this（向上寻找指向的对象）
 
 browser => window document navigator
+math random() round() max() min()
+date gettime() getfullyear() getmonth() getday() gethours() getminutes() getseconds()
+string include() indexof() match() slice() split() tolowercase() touppercase() replace()
+array push() pop() unshift() shift() isarray() indexof() sort() foreach() map() filter()
+object key() values()
+json stringify() parse()
+map
+set
+regexp test()
 
 ### 属性（对象变量）
 dom
@@ -57,10 +68,6 @@ NaN
 dom: querySelector createElement
 element: setAttribute appendChild removeChild
 事件：onclick onblur onfocus onkeypress onkeydown onkeyup onmousehove onmouseout addEventListener(新事件监听，取缔旧的方法) removeEventListener(新事件监听，取缔旧的方法) eventDefault（阻止默认行为） stopPropagation(阻止冒泡)
-类型转化
-数字： ramdom
-字符串： indexof slice tolowercase touppercase replace split
-数组： push pop unshift shift
 
 
 ### 调试 
@@ -100,10 +107,6 @@ sessionStorage localStorage
 setItem() getItem() removeItem() clear()
 ibd
 
-### json
-
-stringify() 转字符串
-parse() 转json
 
 ## es6
 
