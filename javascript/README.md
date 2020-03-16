@@ -146,3 +146,10 @@ endsWith()以什么字符串结尾
 
 
 ## typescript
+
+类型检测 variable: string
+类，和es6一样
+import export，和es6一样
+接口interface，规范作用，参数类型作用
+装饰器@
+
