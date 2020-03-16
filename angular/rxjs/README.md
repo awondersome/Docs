@@ -33,6 +33,12 @@ new Observable(observer => {
 
 
 ### 操作符
+```
+observable.pipe(
+  map(res => of(res)),
+  catchError(err => throwError(err))
+)
+```
 
 RxJS可以拦截监听，在回调前做操作
 对原有的observable操作，返回一个新的observable
