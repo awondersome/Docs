@@ -1,5 +1,99 @@
 # javascript
 
+脚本语言，编程语言，解释性语言，是动态行为
+
+## 变量
+var variable = value
+类型：number string boolean array object
+
+## 函数
+function method() {}
+调用
+参数
+作用域
+返回值return
+
+## 运算符 
+运算: + - * / % ** ++ -- = += -= *= /=
+比较：== === != !=== > < >= <=
+赋值：= 
+逻辑： && // !
+三元： () ? return1 : return2
+
+## 操作符 
+typeof
+
+## 转义符 
+/
+
+## 条件语句
+if(value) {} else if(value) {} else {}
+
+switch(variable) {case value1: break; case value2: break; default: }
+
+## 循环语句（条件+重复）
+for(let variable = 0, variable < number, variable++) { break/continue }
+while() {} 和for用法相同
+do{} while() 先执行一次再判断条件
+
+## 对象（一个属性和变量的集合，通常由变量和函数组成）
+{}
+./[]
+this（向上寻找指向的对象）
+
+browser => window document navigator
+
+## 属性（对象变量）
+dom
+element: textContent
+字符串：length []
+数组：length []
+undifend
+nall
+NaN
+
+
+## 方法（对象函数）
+dom: querySelector createElement
+element: setAttribute appendChild removeChild
+事件：onclick onblur onfocus onkeypress onkeydown onkeyup onmousehove onmouseout addEventListener(新事件监听，取缔旧的方法) removeEventListener(新事件监听，取缔旧的方法) eventDefault（阻止默认行为） stopPropagation(阻止冒泡)
+类型转化
+数字： ramdom
+字符串： indexof slice tolowercase touppercase replace split
+数组： push pop unshift shift
+
+
+## 调试 
+语法错误
+逻辑错误
+
+## 异步
+callback(ajax, eventListen, settime)
+promise(fetch)
+async function method(){ await ()=>{} }
+
+## 面向对象（核心是类）
+将相同特征（即有相同属性和方法）的东西封装成一个集合，就是类
+构造函数(construct 创建类)
+function obj() {var obj = {}, obj.prop = value, obj.method = function}
+实例对象（把类实例出一个对象）
+new obj()
+原型(_proto_，和其他面向对象语言相比，js实例对象不是直接复制类的属性和方法，而是通过原型链)
+原型链： js查找一个对象的属性或方法，会先直接查找对象的属性和方法，如果没有，会继续查找_proto_里面的属性和方法，如果_proto_里面还有_proro_，那就还会继续查找，这就是原型链
+继承：原型才会被继承，原型外的不会被继承
+call：回掉函数，可以改变this的指向
+
+## XMLHttpRequest和fetch
+
+new XMLHttpRequest();
+fetch(url).then((res)=>{}).catch((err)=>{})
+
+## 浏览器数据库
+
 ## es6
+
+let const
+() => {}
+() => x
 
 ## typescript
