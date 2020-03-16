@@ -6,7 +6,7 @@ Observable(实例) observer(参数) subscribe(方法) unsubscribe(方法) Subjec
 
 申明式的，发布时不会执行函数，被订阅后执行
 
-subscribe（next, error, complete）
+observable是由subscribe触发的，promise是自身执行的
 
 
 #### 监听 => 回调（发布 => 订阅）
@@ -23,20 +23,27 @@ fromEvent('click').subscribe(function() {})
 fromEvent('click').operator().subscribe(function() {})
 ```
 
-* RxJS可以拦截监听，在回调前做操作
+`
+new Observable(observer => {
+  observer.next()
+  observer.error()
+  observer.complete()
+})
 
-* observable是由subscribe触发的，promise是自身执行的
-
-* `next*(err|complete)` next可以返回多个值，err和complete只能执行一次，并且两者只会执行一个
 
 
 ### 操作符
 
+RxJS可以拦截监听，在回调前做操作
 对原有的observable操作，返回一个新的observable
 
 pipe() 包含一组操作符
 
+of() 会拦截error，使得后面http和subscribe的hanleError无法执行
+
 throw() 返回一个不发送数据且立即发出错误的observable
+
+throwError() 不会拦截error, 但是会导致ionic组件无法继续加载
 
 #### 工具类
 
