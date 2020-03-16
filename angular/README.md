@@ -154,19 +154,28 @@ websocket 传输协议
 
 
 ### 表单
-* 响应式
 
-`FormGroup 是一组FormControl`
+#### 响应式(推荐)
+`
+import { FormBuilder } from '@angular/forms';
+private formBuilder: FormBuilder
+checkoutForm = this.formBuilder.group({key: value})
+`
+`
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+<input formControlName="key">
+</form>
+`
 
-`FormControl 单个表单控件的值和状态`
+* FormGroup 是一组FormControl
 
-`(ngSubmit) 表单提交事件`
+* FormControl 单个表单控件的值和状态
 
-`Validators 验证器`
+* (ngSubmit) 表单提交事件
 
-`FormGroup = FormBuilder.group({name: []})`
+* Validators 验证器
 
-* 模板驱动
+#### 模板驱动
 
 `[value]`
 
