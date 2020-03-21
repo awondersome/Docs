@@ -30,4 +30,6 @@ Markdown是一种可以使用普通文本编辑器编写的标记语言，通过
 
 ## vscode 插件
 
-### markdownlint 格式化检查
+### 自带preview，点击右上角中间的图标
+
+### markdownlint 格式检查
