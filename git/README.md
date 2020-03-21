@@ -25,40 +25,40 @@
 
 * 提交
 
-## 安装
+### 安装
 
 在git官网下载安装
 
-## 命令
+### 命令
 
-### git --version
+#### git --version
 
 查看当前版本
 
-### git config
+#### git config
 
 配置
 
 * git config --global 配置全局
 
-#### git config user.name
+##### git config user.name
 
 用户名
 
-#### git config user.email
+##### git config user.email
 
 邮箱
 
 
-### git clone 
+#### git clone 
 
 克隆
 
-### git add
+#### git add
 
 添加到暂存区
 
-### git commit
+#### git commit
 
 提交
 
@@ -66,22 +66,22 @@
 
 * -m
 
-### git pull 
+#### git pull 
 
 拉取
 
-### git push 
+#### git push 
 
 推送
 
-### git pull 
+#### git pull 
 
 出错
 
 Your configuration specifies to merge with the ref 'refs/heads/master' from the remote, but no such ref was fetched.
 你的配置指定与来自远程的ref合并，但没有ref被请求
 
-### git status
+#### git status
 
 On branch master
 
