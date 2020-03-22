@@ -156,16 +156,16 @@ websocket 传输协议
 ### 表单
 
 #### 响应式(推荐)
-`
+```
 import { FormBuilder } from '@angular/forms';
 private formBuilder: FormBuilder
 checkoutForm = this.formBuilder.group({key: value})
-`
-`
+```
+```
 <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
 <input formControlName="key">
 </form>
-`
+```
 
 * FormGroup 是一组FormControl
 
@@ -200,21 +200,22 @@ checkoutForm = this.formBuilder.group({key: value})
 @Component()
 
 @Input() variable 属性装饰器，表明输入的property是由父传到子
-`
+```
 <child [variable]="value"></child>
-`
-`@Input() variable
+```
+```
+@Input() variable
 <div>{{variable}}</div>
-`
+```
 
 @Output() event 属性装饰器，表明输出的property是有子传到父
-`
+```
 <child (event)="function"></child>
-`
-`
+```
+```
 @Output() event = new EventEmitter()
 <div (click)="envet.emit()">
-`
+```
 
 @Injectable 依赖注入类装饰器
 

@@ -92,3 +92,23 @@ nothing to commit, working tree clean
 没有东西提交，工作区是空的
 
 直接提交即可
+
+### git branch
+
+创建分支
+
+### git merge
+
+合并分支
+
+### git checkout
+
+切换分支/检查最新
+
+### git reset
+
+回滚工作区和暂存区
+
+### git revert
+
+回滚提交的版本
