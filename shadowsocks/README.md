@@ -10,9 +10,9 @@ aws免费1年
 
 1. 注册
 
-2. 管理控制台 ec2(ubuntu18.04 1cpu 1gb ipv6)
+2. 管理控制台 ec2 => 创建实例(ubuntu18.04 1cpu 1gb ipv6)
 
-3. 下载密钥aws.pem
+3. 创建新密钥对，下载密钥aws.pem
 
 4. chmod 400 aws.pem(密钥改成私有的)
 
