@@ -111,7 +111,8 @@ void fn() {
   person.age = 20;
   person..name = "张三"
         ..age = 20;
-
+  ```
+  
 * ?
 
 ### 类
@@ -147,7 +148,7 @@ void fn() {
   Person zhangsan = new Person("张三", 18);
   Person lisi = new Person("李四", 20);
 
-  class Student extends Person {
+  class Student extends Person { ***************
     int score;
     Person(name, age, score): super(name, score) {
         // 继承父类
@@ -193,3 +194,5 @@ void fn() {
     // 这个是多继承，dart里叫mixins
   }
   ```
+
+  变量函数类，封装继承和多态，异步异常
