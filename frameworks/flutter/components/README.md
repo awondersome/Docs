@@ -1,114 +1,128 @@
-
-## 布局
-
-* container
-
-  * row
-
-  * colum
+## 类
 
 
-* ion-grid
+* Diagnosticable
 
-  * ion-row
+  * Widget
+    * StatelessWidget
+      * Container
+      * Text
+      * Icon
+      * Theme
+      * ScrollView
+        * BoxScrollView
+          * ListView
+      * SingleChildScrollView
+      * 
+      * MaterialButton
+        * RaisedButton
+        * FlatButton
+      * FloatingActionButton
+      * IconButton
+      * ListTile
+      * Card
+      * DrawerHeader
+    * **
+    * StatefulWidget 有状态组件，生命周期变化时可改变状态
+      * WidgetsApp 原生的最基层的组件
+      * Navigator 路由route
+      * Form 表单
+      * FormField
+      * Scrollable
+      * Image
+      * 
+      * MaterialApp 基于widgetsApp改造的material风格
+      * Scaffold 相当于页面内容的根容器content
+      * BottomNavigationBar 导航栏tabs
+      * AppBar 头部header
+      * TextFormField(extend FormField)
+      * CheckBox
+      * 
+      * CupertinoApp 基于widgetsApp改造的cupertino风格
+    * **
+    * RenderObjectWidget
+      * SingleChildRenderObjectWidget
+        * Align
+          * Center
+        * Padding
+        * ConstrainedBox
+        * SizedBox
+        * LimitedBox
+        * AspectRatio
+        * DecoratedBox
+        * Offstage
+        * Opacity
+        * Transform
+      * MultiChildRenderObjectWidget
+        * Flex
+          * Row
+          * Column
+        * Wrap
+        * Stack
+        * RichText
+      * SliverWithKeepAliveWidget
+        * SliverMultiBoxAdaptorWidget
+          * SliverFixedExtentList
+      * LeafRenderObjectWidget
+        * RawImage
+    * **
+    * ProxyWidget
+      * ParentDataWidget
+        * Flexible
+          * Expanded
+        * Positioned
+      * InheritedWidget
+        * MediaQuery
+        * InheritedTheme
+        * DefaultTextStyle
+  * **
+  * DiagnosticableTree
+    * InlineSpan
+      * TextSpan
+  * State
+  * TextStyle
+  * ThemeData
+  * Decoration
+    * BoxDecoration
+* **
+* Axis
 
-  * ion-col
+* EdgeInsetsGeometry
 
-```
-<ion-grid>
-  <ion-row>
-    <ion-col></ion-col>
-    <ion-col></ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col></ion-col>
-    <ion-col></ion-col>
-  </ion-row>
-</ion-grid>
-```
+  * EdgeInsets
 
+* Constraints
+  * BoxConstraints
 
-* 入口组件
+* ShapeBorder
+  * BoxBorder
+    * Border
+  
+* BorderStyle
+  
+* MainAxisAlignment
+* CrossAxisAlignment
 
-```
-.ionic
+* Colors
 
-<ion-app>
-  <ion-router-outlet></ion-router-outlet>
-</ion-app>
-```
+* Icons
 
-```
-.flutter
+* BorderRadiusGeometry
 
-WidgetsApp()
+  * BorderRadius
 
-MaterialApp(
-  home: // 主页
-  routes: // 路由
-)
+* Route
 
-CupertinoApp(
-  home: // 主页
-  routes: // 路由
-)
-```
+  * OverlayRoute
 
-* 页组件
+    * TransitionRoute
 
-```
-.ionic
+      * ModalRoute
 
-<ion-content>
-</ion-content>
-```
+        * PageRoute
 
-```
-.flutter
+          * MaterialPageRoute
 
-Scaffold(
-  body: // 页面内容
-)
-```
+* setState
+* showDialog
 
-* tab组件
-
-```
-
-```
-
-
-```
-appbar
-
-```
-
-```
-BottomNavigationBar
-tabs
-```
-
-```
-TabBar
-
-segment
-```
-
-
-```
-<ion-icon slot="end" name="star"></ion-icon>
-Icon(
-    Icons.favorite,
-    color: Colors.pink,
-    size: 24.0,
-    semanticLabel: 'Text to announce in accessibility modes',
-),
-```
-
-
-* 路由
-```
-<ion-button [routerLink]="['/']"></ion-button>
-Navigator.push()
-Navigator.pop()
-```

@@ -31,6 +31,8 @@
 
   * uses-material-design
 
+  * asset
+
 ## flutter pub get
 
 安装依赖

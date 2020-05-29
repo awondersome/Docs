@@ -50,6 +50,15 @@
 
 邮箱
 
+### ssh
+
+```
+cd  ~/.ssh
+ls // 查看是否配置过
+ssh-keygen -t rsa
+在git账户里添加.pub公钥
+```
+
 ### git clone
 
 克隆
