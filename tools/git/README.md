@@ -88,6 +88,8 @@ Your configuration specifies to merge with the ref 'refs/heads/master' from the 
 
 推送
 
+* git push branch origin --delete 删除分支
+
 ### git status
 
 On branch master
@@ -104,7 +106,10 @@ nothing to commit, working tree clean
 
 ### git branch
 
-创建分支
+创建/查看分支
+
+* git branch -a 查看远程分支
+* git branch -d 删除本地分支
 
 ### git merge
 
