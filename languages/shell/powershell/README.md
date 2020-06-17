@@ -24,8 +24,16 @@
 
 * md
 
+* start . 打开当前文件夹
 
-修改windows mac地址
+## 快速打开程序
+
+1. 查看快捷图标的属性，找到文件目录
+2. 复制当前路径，添加到环境变量
+3. 输入程序名，就能快速打开程序
+
+
+## 修改windows mac地址
 
 1. 查看mac地址，在powershell输入ipconfig /all
 
@@ -36,3 +44,4 @@
 4. 继续在这个子项里新建名为NetworkAddress的子项，然后在新子项里添加一个字符串（命名为default，值是自定义mac地址）和另一个字符串（命名为ParamDesc，值是'MAC Address'）
 
 5. 禁用适配器，然后重启
+

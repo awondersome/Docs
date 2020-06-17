@@ -70,3 +70,18 @@
 
 
 * js/jq是基础 => vue和ng是过渡 => react是web => flutter是app
+
+## 判断是否需要安装
+
+* runtime
+  * nodejs
+  * jvm
+
+* js
+  * runtime
+    * nodejs
+  * super
+    * typescript
+  * tool
+    * webpack
+  * framework
