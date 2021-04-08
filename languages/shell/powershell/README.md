@@ -19,17 +19,33 @@
   * `ls *\*` 查看二层目录
 
   * `ls *\*\*` 查看三层目录
+  * `ls env:` 查看环境变量
 
 * tree
 
 * md
 
 * start . 打开当前文件夹
+* $env: 设置环境变量
+  * `$env:name=path`
 
-## 快速打开程序
+
+### powershell默认位置
+
+`C:\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk`
+
+`C:\Windows\System32\WindowsPowerShell\v1.0\Windows PowerShell.exe`
+
+### 修改powershell起始路径
+
+在快捷图标里的起始位置修改路径
+
+执行`$Profile`查看powershell脚本存放的路径，如果WindowsPowerShell文件夹不存在，需要新建，然后执行`echo "Set-Location D:\" > $Profile`
+
+### 快速打开程序
 
 1. 查看快捷图标的属性，找到文件目录
-2. 复制当前路径，添加到环境变量
+2. 复制当前路径，添加到环境变量path
 3. 输入程序名，就能快速打开程序
 
 
@@ -44,4 +60,5 @@
 4. 继续在这个子项里新建名为NetworkAddress的子项，然后在新子项里添加一个字符串（命名为default，值是自定义mac地址）和另一个字符串（命名为ParamDesc，值是'MAC Address'）
 
 5. 禁用适配器，然后重启
+
 

@@ -1,0 +1,3 @@
+# amd
+
+amd和commonjs一样是一个规范，但是amd是异步加载模块的。requirejs实现了它，详细见requirejs的define方法

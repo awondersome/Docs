@@ -1,0 +1,1 @@
+# [activity](https://developer.android.com/guide/components/activities/intro-activities?hl=zh_cn)
