@@ -6,7 +6,7 @@
 
 > v1.19.0 开始，flutter sdk 包含了 dart sdk 
 
-## [install](https://flutter.dev/docs/get-started/install/windows)
+## [windows install](https://flutter.dev/docs/get-started/install/windows)
 
 - android studio
 
@@ -23,6 +23,12 @@
 - vscode
 
   - 插件 => flutter => 打开查看命令面板，输入doctor，选择 Flutter: Run Flutter Doctor
+
+## [macOs install](https://flutter.dev/docs/get-started/install/macos#update-your-path)
+
+- xcode
+
+- flutter sdk
 
 ## [quickstart](https://flutter.dev/docs/get-started/test-drive?tab=vscode#create-app)
 
