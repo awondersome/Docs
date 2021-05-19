@@ -31,7 +31,10 @@
 - 官方链接
 - install链接
 
+## 缩略图
 
+- xcode
+- cocoapods
 
 ### API目录规范
 
