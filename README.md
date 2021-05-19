@@ -37,6 +37,7 @@
 - [cocoapods](https://github.com/dreamius/Docs/tree/master/cocoapods)
 - [android studio](https://github.com/dreamius/Docs/tree/master/android%20studio)
 - [flutter](https://github.com/dreamius/Docs/tree/master/flutter)
+- [vscode](https://github.com/dreamius/Docs/tree/master/vscode)
 
 ### API目录规范
 
