@@ -1,5 +1,7 @@
 # [xcode](https://developer.apple.com/xcode/)
 
-## [Xcode Command Line Tools]()
+## [install]()
 
-可以使用git
+## tip
+
+1. 安装完xcode有自带git
