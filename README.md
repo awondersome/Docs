@@ -35,6 +35,8 @@
 
 - xcode
 - cocoapods
+- android studio
+- flutter
 
 ### API目录规范
 
