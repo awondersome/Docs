@@ -4,6 +4,12 @@
 
 ## install
 
+## sdk manager
+
+### sdk tools
+
+- android sdk command-line tools
+
 ## issue
 
 1. unable to access Android SDK add-on list
