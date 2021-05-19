@@ -33,10 +33,10 @@
 
 ## 缩略图
 
-- xcode
-- cocoapods
-- android studio
-- flutter
+- [xcode](https://github.com/dreamius/Docs/tree/master/xcode)
+- [cocoapods](https://github.com/dreamius/Docs/tree/master/cocoapods)
+- [android studio](https://github.com/dreamius/Docs/tree/master/android%20studio)
+- [flutter](https://github.com/dreamius/Docs/tree/master/flutter)
 
 ### API目录规范
 
