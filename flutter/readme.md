@@ -9,3 +9,9 @@
 ## cli
 
 - flutter doctor
+
+## issue
+
+1. Android license status unknown.
+
+[解决方案](https://blog.csdn.net/jncinets/article/details/116495022)
